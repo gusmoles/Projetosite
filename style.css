@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6a0dad;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #f2f2f2; /* Tom de cinza para combinar com o fundo da logo */
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5a0b9d;
+}
+
+.mensagem-erro {
+  color: red;
+  margin-top: 10px;
+}
+
+/* CSS para o card da segunda tela */
+.result-card {
+  background-color: #1c1c1c; /* Cinza bem escuro, quase preto */
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  height: 100%; /* Para o card ocupar toda a altura disponível */
+  border-radius: 8px;
+  color: #ffffff; /* Texto em branco para contraste */
+}
+
+.result-card h2 {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.green {
+  color: #00b300;
+}
+
+.green-button {
+  background-color: #00b300;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.green-button:hover {
+  background-color: #009900;
+}
+
+.important-info {
+  font-size: 1em;
+  color: #ffffff;
+  margin: 15px 0;
+}
+
+.info-boxes {
+  display: flex;
+  flex-direction: column; /* Exibir os elementos em coluna */
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px; /* Espaço entre os elementos */
+}
+
+.info-box {
+  background-color: #000;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%; /* Para o box ocupar toda a largura disponível */
+  max-width: 250px; /* Para controlar a largura máxima */
+  text-align: center;
+  color: #ffffff;
+}
+
+.info-box img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 1em;
+}

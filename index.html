@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="loginScreen">
+    <div class="card">
+      <img src="images/logo.jpeg" alt="Site Logo" class="logo">
+      <h2>Enter your details</h2>
+      <form id="loginForm">
+        <input type="text" id="nome" placeholder="Name">
+        <input type="number" id="altura" placeholder="Height (cm)">
+        <input type="number" id="peso" placeholder="Weight (kg)">
+        <select id="atividade">
+          <option value="">Select your activity</option>
+          <option value="leve">Light</option>
+          <option value="moderada">Moderate</option>
+          <option value="intensa">Intense</option>
+        </select>
+        <button type="button" onclick="validarFormulario()">Login</button>
+        <p id="mensagemErro" class="mensagem-erro"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container" id="resultScreen" style="display: none;">
+    <div class="card result-card">
+      <h2><span class="green">Ready.</span> We have already calculated your income, click the button below to access your weight loss plan.</h2>
+      <button class="green-button" onclick="acessarReceitas()">Access Our Recipe</button>
+      <p class="important-info">Important information about your weight loss plan:</p>
+      
+      <div class="info-boxes">
+        <div class="info-box">
+          <img src="images/calorias_icon.png" alt="Calculator">
+          <p>Daily Calories</p>
+          <p class="value">2200 kcal</p>
+        </div>
+        <div class="info-box">
+          <img src="images/gorduras_icon.png" alt="Drumstick">
+          <p>Fats</p>
+          <p class="value">80g</p>
+        </div>
+        <div class="info-box">
+          <img src="images/proteinas_icon.png" alt="Chicken">
+          <p>Daily Proteins</p>
+          <p class="value">150g</p>
+        </div>
+        <div class="info-box">
+          <img src="images/carboidratos_icon.png" alt="Bread">
+          <p>Daily Carbohydrates</p>
+          <p class="value">300g</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
